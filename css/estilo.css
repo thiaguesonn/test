@@ -1,0 +1,14 @@
+.bicicleta{
+    width: 400px;
+    height: 400px;
+    border:3px  solid blue;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.bicicleta:hover{
+    width: 400px;
+    height: 400px;
+    border:3px  solid blue;
+    cursor: pointer;  
+    transform: scale(1.05);
+}

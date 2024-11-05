@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>juego-test</title>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <div class="contenedor-juego">
+        <div class="titulo">
+            <p>juego-test </p>
+            <div class="contenedor-primero">
+                <img src="./imagenes/1.jpg" alt="" class="bicicleta" id="bici1"> 
+                <img src="./imagenes/2.jpg" alt="" class="bicicleta" id="bici2">
+                <img src="./imagenes/3.jpg" alt="" class="bicicleta" id="bici3">
+
+            </div>
+            <div class="contenedor-segundo">
+                <img src="./imagenes/a 1.jpg" alt="" class="bicicleta" id="a1"> 
+                <img src="./imagenes/a 2.jpg" alt="" class="bicicleta" id="a2">
+                <img src="./imagenes/a3.jpg" alt="" class="bicicleta" id="a3">
+
+            </div>
+            <div class="contenedor-tercero">
+                <img src="./imagenes/f 1.jpg" alt="" class="bicicleta" id="f1"> 
+                <img src="./imagenes/f 2.jpg" alt="" class="bicicleta" id="f2">
+                <img src="./imagenes/f 3.jpg" alt="" class="bicicleta" id="f3">
+
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        const bici1 = document.getElementById("bici1");
+        const bici2 = document.getElementById("bici2");
+        const bici3 = document.getElementById("bici3");
+        const a1 = document.getElementById("a1");
+        const a2 = document.getElementById("a2");
+        const a3 = document.getElementById("a3");
+        const f1 = document.getElementById("f1");
+        const f2 = document.getElementById("f2");
+        const f3 = document.getElementById("f3");
+        bici1.addEventListener("click", function(){Swal.fire({
+  title: "si eligiste la bici 1",
+  text: "Si elegís la primera bicicleta, esto indica que las personas te ven como alguien confiable y tradicional. Sos alguien que aprecia las cosas simples de la vida, priorizando las relaciones profundas y el bienestar de quienes amas. Valoras la estabilidad y siempre estás presente para quienes te rodean. Las personas te consideran un pilar en sus vidas, alguien que ofrece calma y equilibrio incluso en los momentos más difíciles. Tu capacidad para escuchar sin juzgar y tu disposición a ayudar son aspectos que te convierten en una figura clave en tu círculo cercano. Tu constancia y lealtad son dos cualidades que inspiran respeto y admiración. Asimismo, sos el tipo de persona que crea un ambiente de tranquilidad y confianza, lo que hace que los demás se sientan seguros al compartir sus preocupaciones y alegrías contigo.!",
+  icon: "success"
+  
+})
+bici2.style.display ='none';
+bici3.style.display ='none';
+
+
+        });
+        bici2.addEventListener("click", function(){Swal.fire({
+  title: "si eligiste la bici 2",
+  text: "Esto significa que los demás te perciben como una persona aventurera y valiente. Te asocian con una actitud intrépida y llena de vitalidad, siempre en busca de experiencias que te hagan crecer. Inspiras a quienes te rodean con tu energía y disposición para enfrentar nuevos desafíos, ya que no te asustan los riesgos ni las situaciones desconocidas. Sos esa persona que siempre tiene una historia interesante que contar o un proyecto emocionante en mente, lo que te convierte en un referente para aquellos que buscan coraje y motivación. Tu curiosidad insaciable y tu deseo de superación te impulsan a explorar nuevos horizontes. Definitivamente, eres un recordatorio constante de que la vida es una aventura que merece ser vivida al máximo.!",
+  icon: "success"
+});
+
+bici1.style.display ='none';
+bici3.style.display ='none';
+        });
+        bici3.addEventListener("click", function(){Swal.fire({
+  title: "si eligiste la bici 3",
+  text: "Si eliges la tercera bicicleta, esto sugiere que las personas piensan que sos innovador y práctico. Te consideran una persona eficiente, con una clara visión de futuro, siempre buscando la manera más inteligente y efectiva de hacer las cosas. Los demás te ven como alguien que se adapta fácilmente a los cambios, un maestro en el arte de la flexibilidad, capaz de ajustarte rápidamente a nuevas circunstancias sin perder el rumbo. También sos visto como una persona confiable cuando se trata de implementar ideas o proyectos, ya que tu capacidad para resolver problemas de manera creativa te hacen destacar como alguien en quien confiar cuando se necesita una solución rápida y efectiva.!",
+  icon: "success"
+});
+
+bici1.style.display ='none';
+bici2.style.display ='none';
+
+        });
+        a1.addEventListener("click", function(){Swal.fire({
+  title: "si eligiste la auto 1",
+  text: "- Si lo primero que te llamó la atención fue el auto verte, quiere decir que perteneces a un grupo de personas que pueden encontrar fácilmente un lenguaje común con cualquiera. Sos sociable y tenés un carácter fácil. Te gusta conocer gente nueva e interesante, pero, al mismo tiempo, a veces podés tener problemas para hacer nuevas amistades porque sentís que muchos pueden ser poco sinceros.!",
+  icon: "success"
+});
+
+a3.style.display ='none';
+a2.style.display ='none';
+
+        });
+        a2.addEventListener("click", function(){Swal.fire({
+  title: "si eligiste el auto 2",
+  text: "- Si tu auto favorito fue el amarillo, quiere decir que sos una persona que ama la independencia. Las restricciones y los límites para vos son comparables a los trabajos forzados. Te gusta viajar, descubrir algo nuevo, conocer gente y no depender de nadie.!",
+  icon: "success"
+});
+a3.style.display ='none';
+a1.style.display ='none';
+
+
+        });
+    
+        a3.addEventListener("click", function(){Swal.fire({
+  title: "si eligiste el auto 3",
+  text: " Si elegiste el auto rojo, sos una persona muy ambiciosa y orientada a objetivos. Siempre tenés éxito en el campo que has elegido. Tenés grandes metas y planes para el futuro. Nunca disminuirá la velocidad ni retrocederá hasta que logres lo que deseas.!",
+  icon: "success"
+});
+
+a1.style.display ='none';
+a2.style.display ='none';
+
+        });
+        f1.addEventListener("click", function(){Swal.fire({
+  title: "si eligiste el la flor 1",
+  text: " Si elegís la primera flor, esto significa que tenés un carácter extrovertido. Siempre buscas la luz incluso en los momentos más difíciles, iluminando el camino de los que te rodean con tu energía contagiosa. Te define tu optimismo, esa chispa interior que te impulsa a seguir adelante incluso cuando las circunstancias se complican. Además, posees una innata capacidad de liderazgo que te permite inspirar a otros. Aunque enfrentas desafíos, no te das por vencido, sino que sigues luchando hasta alcanzar tus metas. Sos una fuente de calma y seguridad, brindando palabras de aliento y una presencia reconfortante que hace que los demás se sientan",
+  icon: "success"
+});
+
+f3.style.display ='none';
+f2.style.display ='none';
+if(bici1.style.display != 'none' && a1.style.display != 'none' && f1.style.display != 'none'){
+    alert("usted a elegido siempre opcion uno ");
+}
+       
+});
+    
+    f2.addEventListener("click", function(){Swal.fire({
+title: "si eligiste el la flor 2",
+text: "Si te llama la atención la segunda flor, esto indica que tenés un carácter equilibrado y pacífico. Valoras la sencillez y la autenticidad, y preferís rodearte de personas que compartan esos mismos valores, buscando siempre relaciones que sean genuinas. No te atraen las superficialidades ni las máscaras sociales. Tu serenidad es uno de tus mayores dones, permitiéndote mantener la calma incluso cuando otros pueden estar angustiados. Sabes escuchar, entender y ofrecer consejo sin juzgar, lo que te hace un amigo invaluable. Posees una empatía que te permite ponerte en el lugar de los demás y comprender sus sentimientos profundamente. Preferís evitar los conflictos y, en lugar de enfrentamientos, siempre buscas soluciones pacíficas que promuevan el bienestar de todos.",
+icon: "success"
+});
+
+f3.style.display ='none';
+f1.style.display ='none';
+if(bici2.style.display != 'none' && a2.style.display != 'none' && f2.style.display != 'none'){
+    alert("usted a elegido siempre opcion 2 ");
+}
+    });
+    f3.addEventListener("click", function(){Swal.fire({
+title: "si eligiste el la flor 3",
+text: "Esto sugiere que tenés un carácter independiente y aventurero, siempre dispuesto a desafiar lo convencional. No seguís las normas establecidas solo por seguirlas; preferís cuestionarlas y explorar otras posibilidades. Tu naturaleza libre y abierta a nuevas experiencias te convierte en una persona que no teme salir de su zona de confort. Donde otros ven incertidumbre, tú ves aventura y potencial. Aunque a veces podés parecer reservado, detrás de esa aparente tranquilidad se esconde una persona decidida y resiliente. Tu fuerza radica en tu capacidad para adaptarte a los desafíos y superarlos con firmeza. Te guías por tus propios principios y te mantienes fiel a lo que crees, sin dejarte influir por la presión externa..",
+icon: "success"
+
+});
+
+
+f2.style.display ='none';
+f1.style.display ='none';
+if(bici3.style.display != 'none' && a3.style.display != 'none' && f3.style.display != 'none'){
+    alert("usted a elegido siempre opcion 3 ");
+}
+    });
+
+
+
+
+
+
+
+        </script>
+</body>
+</html>
